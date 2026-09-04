@@ -1,22 +1,22 @@
-# BayesIQ Analytics - Configuración con Groq
+# BayesIQ Analytics - Groq Setup
 
-## 🚀 Configuración de Groq (IA gratuita en la nube)
+## Groq Setup (Free Cloud AI)
 
-### 1. Obtener API Key
+### 1. Get API Key
 ```bash
-# Ve a: https://console.groq.com/
-# Crea una cuenta gratuita
-# Copia tu API key
+# Go to: https://console.groq.com/
+# Create a free account
+# Copy your API key
 ```
 
-### 2. Configurar el archivo .env
+### 2. Configure the .env file
 ```bash
-# Edita el archivo .env y pega tu API key:
-GROQ_API_KEY=tu_clave_real_de_groq
+# Edit the .env file and paste your API key:
+GROQ_API_KEY=your_actual_groq_key
 GROQ_MODEL=mixtral-8x7b-32768
 ```
 
-### 3. Ejecutar la aplicación
+### 3. Run the application
 ```bash
 cd /home/emmanuel/env
 source bin/activate
@@ -25,18 +25,5 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## ⚙️ Modelos disponibles en Groq
-- `mixtral-8x7b-32768` - Recomendado (rápido y eficiente)
-- `llama2-70b-4096` - Más potente pero más lento
-- `gemma-7b-it` - Modelo de Google
-
-## 🆘 Solución de problemas
-- **"API key inválida"**: Verifica que la clave en `.env` sea correcta
-- **"Cuota excedida"**: Espera unos minutos (cuota gratuita se renueva)
-- **"Timeout"**: El servidor está ocupado, intenta de nuevo
-
-## 💡 Ventajas de Groq
-- ✅ **Gratuito** con cuota generosa
-- ✅ **Muy rápido** (acelerado por hardware especial)
-- ✅ **Perfecto para despliegue** en la nube
-- ✅ **No requiere instalación** local
+## Available Models on Groq
+- `mixtral-8x7b-32768` - Recommended (fast and efficient)
